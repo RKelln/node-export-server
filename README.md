@@ -60,6 +60,14 @@ ln -s `which nodejs` /usr/bin/node
 
     highcharts-export-server <arguments>
 
+### Running as a Windows service
+
+You can use the `node-windows` package to run the server as a Windows service. A node script has been provided to help install/uninstall the service:
+
+    npm install node-windows -g
+    npm link node-windows
+    node windows-service.js install
+
 ## Command Line Arguments
 
 **General options**
